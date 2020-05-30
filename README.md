@@ -19,3 +19,13 @@
 [Create a WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop#create-a-winui-3-desktop-app-for-c-and-net-5)
 
 [Xaml Controls Gallery (WinUI 3.0 Preview 1 branch)](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/#xaml-controls-gallery-winui-30-preview-1-branch)
+
+## WinUI 2.x Library
+
+[Introduction to WinUI 2.x library](https://docs.microsoft.com/en-us/windows/apps/winui/#windows-ui-2x-library)
+
+### Prerequisites
+
+[Download and install the Windows UI Library](https://docs.microsoft.com/en-us/windows/apps/winui/winui2/getting-started#download-and-install-the-windows-ui-library)
+
+[Contributing to the Windows UI Library](https://docs.microsoft.com/en-us/windows/apps/winui/winui2/getting-started#contributing-to-the-windows-ui-library)
