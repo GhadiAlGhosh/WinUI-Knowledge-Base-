@@ -1,5 +1,7 @@
 # Knowledge Base for WinUI Platform of Windows
 
+The Windows UI Library (WinUI) is the modern native user interface (UI) platform for Windows apps across both Win32 and UWP.
+
 ## WinUI 3.0 Library Preview 1
 
 [Introduction to WinUI 3.0 Preview 1](https://docs.microsoft.com/en-us/windows/apps/winui/#windows-ui-30-library-preview-1)
