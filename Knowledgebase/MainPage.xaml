@@ -1,0 +1,169 @@
+﻿<Page
+    x:Class="Knowledgebase.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Knowledgebase"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel
+                Grid.Row="0"
+                Height="80"
+                Orientation="Horizontal"
+                VerticalAlignment="Center"
+                Background="{ThemeResource SystemControlChromeLowAcrylicWindowBrush}">
+                <Image 
+                    Source="Assets\Logo.png"
+                    Margin="300,5,0,0"/>
+                <TextBlock
+                    Text="WinUI"
+                    Style="{ThemeResource HeaderTextBlockStyle}"
+                    HorizontalAlignment="Center"
+                    FontWeight="SemiBold"
+                    Margin="0,5,0,0"/>
+                <TextBlock
+                    Text="Help Center"
+                    Style="{ThemeResource HeaderTextBlockStyle}"
+                    HorizontalAlignment="Center"
+                    FontWeight="Light"
+                    Margin="10,5,0,0"/>
+                <Button
+                    Content="Submit a request"
+                    Margin="365,5,0,0"
+                    Background="Transparent" 
+                    BorderBrush="Gray"
+                    FontSize="15"
+                    BorderThickness="1"/>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="1"
+                Height="100">
+                <TextBox
+                    Height="50"
+                    Width="950"
+                    Margin="0,24,0,0"
+                    PlaceholderText="Search KnowledgeBase"
+                    FontSize="24"
+                    BorderThickness="1"
+                    PlaceholderForeground="LightGray"/>
+            </StackPanel>
+            <RelativePanel
+                Grid.Row="2">
+                <StackPanel
+                    x:Name="WinUI3Panel"
+                    Width="500"
+                    Height="800"
+                    Margin="300,0,0,0"
+                    Orientation="Vertical">
+                    <TextBlock
+                        Text="WinUI 3.0 Library Preview 1"
+                        Style="{ThemeResource SubheaderTextBlockStyle}"/>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                        <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/winui/#windows-ui-30-library-preview-1">
+                            Introduction to WinUI 3.0 Preview 
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Text="Prerequisites"
+                        FontSize="18"
+                        FontWeight="SemiBold"/>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                        <Hyperlink NavigateUri="https://visualstudio.microsoft.com/vs/preview/">
+                            Install Visual Studio 2019, version 16.7 Preview 1
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                        <Hyperlink NavigateUri="https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x64.exe">
+                           Install both x64 version of .NET 5 Preview 4
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                        <Hyperlink NavigateUri="https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x86.exe">
+                           Install both x86 version of .NET 5 Preview 4
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates">
+                        Install the VSIX extension 
+                    </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Text="Get started with WinUI 3.0 for desktop apps"
+                        Margin="5,24,0,0"
+                        FontSize="18"
+                        FontWeight="SemiBold"/>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop#create-a-winui-3-desktop-app-for-c-and-net-5">
+                        Create a WinUI 3 desktop app for C# and .NET 5
+                    </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/winui/winui3/#xaml-controls-gallery-winui-30-preview-1-branch">
+                        Xaml Controls Gallery (WinUI 3.0 Preview 1 branch)
+                    </Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    x:Name="WinUI23Panel"
+                    Width="500"
+                    Height="800"
+                    RelativePanel.RightOf="WinUI3Panel"
+                    Margin="100,0,0,0">
+                    <TextBlock
+                        Text="WinUI 2.x Library"
+                        Style="{ThemeResource SubheaderTextBlockStyle}"/>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                        <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/winui/#windows-ui-2x-library">
+                            Introduction to WinUI 2.x library
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Text="Prerequisites"
+                        Margin="5,24,0,0"
+                        FontSize="18"
+                        FontWeight="SemiBold"/>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/winui/winui2/getting-started#download-and-install-the-windows-ui-library">
+                        Download and install the Windows UI Library
+                    </Hyperlink>
+                    </TextBlock>
+                    <TextBlock
+                        Margin="5,24,0,0"
+                        Style="{ThemeResource SubtitleTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/winui/winui2/getting-started#contributing-to-the-windows-ui-library">
+                        Contributing to the Windows UI Library
+                    </Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </RelativePanel>
+        </Grid>
+    </Grid>
+</Page>
